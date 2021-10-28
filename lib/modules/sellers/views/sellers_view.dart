@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:havchik/common/constants/colors.dart';
+import 'package:havchik/common/constants/app_colors.dart';
+import 'package:havchik/modules/sellers/views/components/seller_card.dart';
 import 'package:havchik/modules/sellers/views/components/sellers_header.dart';
 
 class SellersView extends StatefulWidget {
@@ -18,7 +19,10 @@ class _SellersViewState extends State<SellersView> {
           children: const [
             Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20),
-                child: SellersHeader())
+                child: SellersHeader()),
+            Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20),
+                child: SellerCard()),
           ],
         ));
   }
