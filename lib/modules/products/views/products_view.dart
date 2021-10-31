@@ -29,13 +29,33 @@ class _ProductsViewState extends State<ProductsView> {
             ),
             child: Text(
               "Продукты",
-              style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
+              style: TextStyle(fontSize: 26, fontWeight: FontWeight.w600),
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(right: 20, left: 20, bottom: 10),
+            padding: EdgeInsets.only(right: 20, left: 20, bottom: 14),
             child: ProductCard(),
-          )
+          ),
+          Padding(
+            padding: EdgeInsets.only(right: 20, left: 20, bottom: 14),
+            child: ProductCard(),
+          ),
+          Padding(
+            padding: EdgeInsets.only(right: 20, left: 20, bottom: 14),
+            child: ProductCard(),
+          ),
+          Padding(
+            padding: EdgeInsets.only(right: 20, left: 20, bottom: 14),
+            child: ProductCard(),
+          ),
+          Padding(
+            padding: EdgeInsets.only(right: 20, left: 20, bottom: 14),
+            child: ProductCard(),
+          ),
+          Padding(
+            padding: EdgeInsets.only(right: 20, left: 20, bottom: 14),
+            child: ProductCard(),
+          ),
         ],
       ),
     );
