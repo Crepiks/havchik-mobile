@@ -12,8 +12,8 @@ class AppBackButton extends StatelessWidget {
         Navigator.pop(context);
       },
       child: Container(
-          height: 50,
-          width: 50,
+          height: 54,
+          width: 54,
           alignment: Alignment.center,
           decoration: const BoxDecoration(
               color: AppColors.light,
