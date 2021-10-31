@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:havchik/common/constants/app_colors.dart';
+import 'package:havchik/common/entities/seller.dart';
+import 'package:havchik/data/sellers.dart';
 import 'package:havchik/modules/sellers/views/components/seller_card.dart';
 import 'package:havchik/modules/sellers/views/components/sellers_header.dart';
 
@@ -16,14 +18,25 @@ class _SellersViewState extends State<SellersView> {
     return Scaffold(
         backgroundColor: AppColors.background,
         body: ListView(
-          children: const [
-            Padding(
+          children: [
+            const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20),
                 child: SellersHeader()),
-            Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20),
-                child: SellerCard()),
+            const SizedBox(
+              height: 4,
+            ),
+            ..._buildSellerCards(sellers)
           ],
         ));
+  }
+
+  List<Widget> _buildSellerCards(List<Seller> sellers) {
+    return sellers
+        .map(
+          (Seller seller) => Padding(
+              padding: const EdgeInsets.only(right: 20, left: 20, bottom: 14),
+              child: SellerCard(seller: seller)),
+        )
+        .toList();
   }
 }
