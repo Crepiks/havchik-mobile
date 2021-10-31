@@ -24,6 +24,13 @@ class _SellersViewState extends State<SellersView> {
             const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20),
                 child: SellersHeader()),
+            const Padding(
+                padding:
+                    EdgeInsets.only(top: 4, right: 20, left: 20, bottom: 20),
+                child: Text(
+                  "Поставщики",
+                  style: TextStyle(fontSize: 26, fontWeight: FontWeight.w600),
+                )),
             const SizedBox(
               height: 4,
             ),

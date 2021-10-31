@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:havchik/common/components/notifications_button.dart';
+import 'package:havchik/common/components/profile_button.dart';
 
 class SellersHeader extends StatelessWidget {
   const SellersHeader({Key? key}) : super(key: key);
@@ -8,12 +10,8 @@ class SellersHeader extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 14),
       child: Row(
-        children: const [
-          Text(
-            "Поставщики",
-            style: TextStyle(fontSize: 26, fontWeight: FontWeight.w600),
-          )
-        ],
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: const [NotificationsButton(), ProfileButton()],
       ),
     );
   }
